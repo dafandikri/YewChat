@@ -140,7 +140,7 @@ impl Component for Chat {
         let submit = ctx.link().callback(|_| Msg::SubmitMessage);
         html! {
             <div class="flex w-screen">
-                <div class="flex-none w-56 h-screen bg-gray-100">
+                <div class="flex-none w-56 h-screen bg-purple-100">
                     <div class="text-xl p-3">{"Users"}</div>
                     {
                         self.users.clone().iter().map(|u| {
